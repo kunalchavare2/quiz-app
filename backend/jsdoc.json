@@ -1,0 +1,26 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "includePattern": ".+\\.js(doc|x)?$", // Only process file ending in .js, .jsdoc or .jsx
+    "include": ["."], // Check all folders.
+    "exclude": ["node_modules"] // Be gone, node_modules.
+  },
+  "opts": {
+    "template": "./node_modules/tidy-jsdoc",
+    "prism-theme": "prism-custom",
+    "encoding": "utf8",
+    "destination": "./public/docs/",
+    "recurse": true
+  },
+  "plugins": ["plugins/markdown", "plugins/summarize"],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "metadata": {
+    "title": "My JavaScript Library"
+  }
+}

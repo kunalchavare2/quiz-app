@@ -1,0 +1,766 @@
+[
+  {
+    "type": "boolean",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In Battlestar Galactica (2004), Cylons were created by man as cybernetic workers and soldiers.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "From what show is the character &quot;James Doakes&quot;? ",
+    "correct_answer": "Dexter",
+    "incorrect_answers": [
+      "Marvel&#039;s Daredevil",
+      "Boardwalk Empire",
+      "The Walking Dead"
+    ]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "In &quot;Star Trek&quot;, Klingons respect William Shakespeare, they even suspect him having a Klingon lineage.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "Which company has exclusive rights to air episodes of the &quot;The Grand Tour&quot;?",
+    "correct_answer": "Amazon",
+    "incorrect_answers": ["Netflix", "BBC", "CCTV"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "How many seasons did the TV show &quot;Donkey Kong Country&quot; last?",
+    "correct_answer": "2",
+    "incorrect_answers": ["1", "4", "5"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "What actor portrays Hogan &quot;Wash&quot; Washburne in the TV Show Firefly?",
+    "correct_answer": "Alan Tudyk",
+    "incorrect_answers": ["Adam Baldwin", "Nathan Fillion", "Sean Maher"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In AMC&#039;s TV Series &quot;The Walking Dead&quot; what are &quot;Zombies&quot; referred to as?",
+    "correct_answer": "Walkers",
+    "incorrect_answers": ["Creepers", "Maggots", "Hell Pigs"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "On the show &quot;Rick and Morty&quot;, in episode &quot;Total Rickall&quot;, who was a parasite?",
+    "correct_answer": "Pencilvester",
+    "incorrect_answers": ["Beth Smith", "Summer Smith", "Mr. Poopy Butthole"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Television",
+    "question": "In 2008, British celebrity chef Gordon Ramsay believes he almost died after suffering what accident in Iceland while filming?",
+    "correct_answer": "Slipping off a cliff, and nearly drowning in icy water",
+    "incorrect_answers": [
+      "Crash landing when arriving at Keflav&iacute;k airport",
+      "A minor car accident in a snowstorm",
+      "Being served under-cooked chicken at his hotel"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "Baron Silas Greenback is the arch nemesis of which cartoon hero?",
+    "correct_answer": "Danger Mouse",
+    "incorrect_answers": ["Bananaman", "SuperTed", "Captain Star"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In Game of Thrones, what continent lies across the Narrow Sea from Westeros?",
+    "correct_answer": "Essos",
+    "incorrect_answers": ["Easteros", "Westereast", "Esuntos"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "When Donkey Kong died in the &quot;Donkey Kong Country&quot; episode &quot;It&#039;s a Wonderful Life&quot;, who was his guardian angel?",
+    "correct_answer": "Eddie the Mean Old Yeti",
+    "incorrect_answers": ["Kiddy Kong", "Diddy Kong", "King K. Rool"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "AMC&#039;s &quot;The Walking Dead&quot;, Rick, Carl, Daryl, Morgan, Carol and Maggie were introduced to us in Season 1.",
+    "correct_answer": "False",
+    "incorrect_answers": ["True"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Television",
+    "question": "The theme for the popular science fiction series &quot;Doctor Who&quot; was composed by who?",
+    "correct_answer": "Ron Grainer",
+    "incorrect_answers": ["Murray Gold", "Delia Derbyshire", "Peter Howell"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "What is the name of the inspector in the series &quot;On the Buses&quot;?",
+    "correct_answer": "Blakey",
+    "incorrect_answers": ["Harper", "Naily", "Gally"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Television",
+    "question": "What was the date of original airing of the pilot episode of My Little Pony: Friendship is Magic?",
+    "correct_answer": "October 10th, 2010",
+    "incorrect_answers": [
+      "November 6th, 2010",
+      "April 14th, 1984",
+      "May 18th, 2015"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "Which of following is rude and dishonorable by Klingon standards?",
+    "correct_answer": "Taking his D&#039;k tahg",
+    "incorrect_answers": [
+      "Insulting and laughing at him at the dinner table",
+      "Reaching over and taking his meal",
+      "Punching him and taking his ship station position"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "Who was the winner of the 2016 WWE Royal Rumble?",
+    "correct_answer": "Triple H",
+    "incorrect_answers": ["Roman Reigns", "AJ Styles", "Dean Ambrose"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In the show &quot;Dragonball Z&quot;, what is the name of Cell&#039;s most powerful attack?",
+    "correct_answer": "Solar Kamehameha",
+    "incorrect_answers": [
+      "Super Kamehameha",
+      "Cell Kamehameha",
+      "Android Kamehameha"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In the TV show &quot;Cheers&quot;, Sam Malone was a former relief pitcher for which baseball team?",
+    "correct_answer": "Boston Red Sox",
+    "incorrect_answers": [
+      "New York Mets",
+      "Baltimore Orioles",
+      "Milwaukee Brewers"
+    ]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "hard",
+    "category": "Entertainment: Television",
+    "question": "The Klingon home planet is Qo&#039;noS.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "In the TV series Red Dwarf, Kryten&#039;s full name is Kryten 2X4B-523P.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "What is the name of the main character in &quot;The Flash&quot; TV series?",
+    "correct_answer": "Barry Allen",
+    "incorrect_answers": ["Oliver Queen", "Bart Allen", "Bruce Wayne"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "In the episode of SpongeBob SquarePants, &quot;Survival of the Idiots&quot;, Spongebob called Patrick which nickname?",
+    "correct_answer": "Pinhead",
+    "incorrect_answers": ["Starfish", "Larry", "Dirty Dan"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "In the television show &quot;Lazy Town&quot;, who is the actor of Robbie Rotten?",
+    "correct_answer": "Stef&aacute;n Stef&aacute;nsson",
+    "incorrect_answers": [
+      "Adam Sandler",
+      "Magn&uacute;s Scheving",
+      "Stephen Carl"
+    ]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "The television show Doctor Who first aired in 1963.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "Dee from &quot;It&#039;s Always Sunny in Philadelphia&quot; has dated all of the following guys EXCEPT",
+    "correct_answer": "Matthew &quot;Rickety Cricket&quot; Mara",
+    "incorrect_answers": [
+      "Colin the Thief",
+      "Ben the Soldier",
+      "Kevin Gallagher aka Lil&#039; Kevin"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "Which of these Disney shows is classified as an anime?",
+    "correct_answer": "Stitch!",
+    "incorrect_answers": [
+      "Cory in the House",
+      "The Emperor&#039;s New School",
+      "Hannah Montana"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "What is the name of the planet that the Doctor from television series &quot;Doctor Who&quot; comes from?",
+    "correct_answer": "Gallifrey",
+    "incorrect_answers": ["Sontar", "Skaro", "Mondas"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "Guy&#039;s Grocery Games is hosted by which presenter?",
+    "correct_answer": "Guy Fieri",
+    "incorrect_answers": ["Guy Martin", "Guy Ritchie", "Ainsley Harriott"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "In the Netflix show, Stranger Things, what song would Will sing to himself as he was missing?",
+    "correct_answer": "Should I Stay or Should I Go?",
+    "incorrect_answers": [
+      "Love Will Tear Us Apart",
+      "This Charming Man",
+      "Africa"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "Which boxing personality was one of the presenters in the 1999 revival of It&#039;s a Knockout?",
+    "correct_answer": "Frank Bruno",
+    "incorrect_answers": ["Henry Cooper", "Muhammad Ali", "Joe Fraiser"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "Klingons once had a period of Democracy in their history, they referred to it as the &quot;Dark Times&quot;.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "Which of these characters in &quot;Stranger Things&quot; has the power of Telekinesis?",
+    "correct_answer": "Eleven",
+    "incorrect_answers": ["Mike", "Lucas", "Karen"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In the cartoon &#039;SpongeBob SquarePants&#039;, what did the acronym E.V.I.L stand for?",
+    "correct_answer": "Every Villain Is Lemons",
+    "incorrect_answers": [
+      "Every Villain Is Lemonade",
+      "Every Villain Is Limes",
+      "Each Villain Is Lemonade"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In the show, Doctor Who, what does T.A.R.D.I.S stand for?",
+    "correct_answer": "Time And Relative Dimensions In Space",
+    "incorrect_answers": [
+      "Time And Resting Dimensions In Space",
+      "Time And Relative Dimensions In Style",
+      "Toilet Aid Rope Dog Is Soup"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In season one of the Netflix political drama &quot;House of Cards&quot;, what government position does Frank Underwood hold?",
+    "correct_answer": "House Majority Whip",
+    "incorrect_answers": ["Attorney General", "President", "Chief of Staff"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In the show &quot;Futurama&quot; what is Fry&#039;s full name?",
+    "correct_answer": "Philip J. Fry",
+    "incorrect_answers": ["Fry J. Philip", "Fry Rodr&iacute;guez", "Fry Philip"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "Who co-founded the YouTube Let&#039;s Play channel &quot;Game Grumps&quot; alongside Newgrounds animator Egoraptor?",
+    "correct_answer": "JonTron",
+    "incorrect_answers": ["Pewdiepie", "Tobuscus", "Markiplier"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In Game of Thrones, what is Littlefinger&#039;s real name?",
+    "correct_answer": "Petyr Baelish",
+    "incorrect_answers": [
+      "Podrick Payne",
+      "Lancel Lannister",
+      "Torrhen Karstark"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In the TV show &#039;M*A*S*H&#039;, what was the nickname of Corporal Walter O&#039;Reilly?",
+    "correct_answer": "Radar",
+    "incorrect_answers": ["Hawkeye", "Hot Lips", "Trapper"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Television",
+    "question": "Which country does the YouTuber &quot;SinowBeats&quot; originate from?",
+    "correct_answer": "Scotland",
+    "incorrect_answers": ["England", "Sweden", "Germany"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Television",
+    "question": "In the TV Show &quot;Donkey Kong Country&quot;, which episode did the song &quot;Eddie, Let Me Go Back To My Home&quot; play in?",
+    "correct_answer": "It&#039;s a Wonderful Life",
+    "incorrect_answers": [
+      "Message In A Bottle Show",
+      "To The Moon Baboon",
+      "Ape-Nesia"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Television",
+    "question": "Which race enjoys a glass of warm baghol in &quot;Star Trek&quot;?",
+    "correct_answer": "Klingon",
+    "incorrect_answers": ["Vulcan", "Human", "Botha"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In Supernatural, what&#039;s is Sam&#039;s brothers name?",
+    "correct_answer": "Dean",
+    "incorrect_answers": ["Dave", "Steve", "Mike"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Television",
+    "question": "In the show &#039;Doctor Who&#039;, what is the name of the time-capsule model stolen by &#039;the Doctor&#039;?",
+    "correct_answer": "TT Type 40, Mark 3 (TARDIS)",
+    "incorrect_answers": [
+      "TT Type 1, Mark 3 (TARDIS)",
+      "TT Type 40, Mark 5 (TARDIS)",
+      "TT Type 1, Mark 5 (TARDIS)"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "In the Sci-Fi television show Doctor Who, who plays the Tenth Doctor?",
+    "correct_answer": "David Tennant",
+    "incorrect_answers": ["William Hartnell", "Peter Capaldi", "Peter Davison"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "Who was the first ever actor to play &quot;The Doctor&quot; on &quot;Doctor Who&quot;?",
+    "correct_answer": "William Hartnell",
+    "incorrect_answers": ["David Tennant", "Peter Capaldi", "Tom Baker"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Television",
+    "question": "What was the callsign of Commander William Adama in Battlestar Galactica (2004)?",
+    "correct_answer": "Husker",
+    "incorrect_answers": ["Starbuck", "Apollo", "Crashdown"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "Which WWF wrestler had the nickname &quot;The Ayatollah of Rock &#039;N&#039; Rolla&quot;?",
+    "correct_answer": "Chris Jericho",
+    "incorrect_answers": ["Marty Jannetty", "Scott Hall", "Shawn Michaels"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "Bob Ross was a US Air Force pilot.",
+    "correct_answer": "False",
+    "incorrect_answers": ["True"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In Star Trek: The Next Generation, what is the name of Data&#039;s cat?",
+    "correct_answer": "Spot",
+    "incorrect_answers": ["Mittens", "Tom", "Kitty"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "Who was the star of the TV series &quot;24&quot;?",
+    "correct_answer": "Kiefer Sutherland",
+    "incorrect_answers": ["Kevin Bacon", "Hugh Laurie", "Rob Lowe"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In the original Star Trek TV series, what was Captain James T. Kirk&#039;s middle name?",
+    "correct_answer": "Tiberius",
+    "incorrect_answers": ["Trevor", "Travis", "Tyrone"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "On the NBC show Community what was Star Burns&#039; real name?",
+    "correct_answer": "Alex",
+    "incorrect_answers": ["Todd", "Neal", "Grimus"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In &quot;Star Trek&quot;, Klaang is a typical Klingon male.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "What country is Cory in the House set in?",
+    "correct_answer": "The United States of America",
+    "incorrect_answers": ["Canada", "Venezuala", "England"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "In &quot;Star Trek: The Next Generation&quot;, Data is the only android in existence.",
+    "correct_answer": "False",
+    "incorrect_answers": ["True"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "Who is the star of the AMC series Breaking Bad?",
+    "correct_answer": "Walter White",
+    "incorrect_answers": ["Saul Goodman", "Jesse Pinkman", "Skyler White"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "What does Bart sell his soul for in The Simpsons episode &#039;Bart Sells His Soul&#039;?",
+    "correct_answer": "$5",
+    "incorrect_answers": ["A Copy of Bonestorm 2", "$100", "A Giant Gobstopper"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "Which of these Bojack Horseman characters is a human?",
+    "correct_answer": "Todd Chavez",
+    "incorrect_answers": [
+      "Lennie Turtletaub",
+      "Princess Carolyn",
+      "Tom Jumbo-Grumbo"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "What NBC sitcom once saw two of its characters try to pitch NBC on a sitcom about nothing?",
+    "correct_answer": "Seinfeld",
+    "incorrect_answers": ["Frasier", "Becker", "Friends"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In which British seaside town was the BBC sitcom &quot;Fawlty Towers&quot; set?",
+    "correct_answer": "Torquay",
+    "incorrect_answers": ["Blackpool", "Bournemouth", "Great Yarmouth"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "Which of the following awards do Matt Stone and Trey Parker NOT have?",
+    "correct_answer": "Oscar",
+    "incorrect_answers": ["Emmy", "Tony", "Grammy"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "What is Meg&#039;s full name in &quot;Family Guy&quot;?",
+    "correct_answer": "Megatron Griffin",
+    "incorrect_answers": ["Who-Cares Griffin", "Neil Griffin", "Megan Griffin"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "In Game of Thrones what is the name of Jon Snow&#039;s sword?",
+    "correct_answer": "Longclaw",
+    "incorrect_answers": ["Oathkeeper", "Widow&#039;s Wail", "Needle"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "Which of the following was not an actor/actress on the American television show &quot;Saturday Night Live&quot; in Season 42?",
+    "correct_answer": "Tina Fey",
+    "incorrect_answers": ["Mikey Day", "Kate McKinnon", "Sasheer Zamata"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "In Breaking Bad, the initials W.W. refer to which of the following?",
+    "correct_answer": "Walter White",
+    "incorrect_answers": ["William Wolf", "Willy Wonka", "Wally Walrus"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Television",
+    "question": "In &quot;Star Trek&quot;, who was the founder of the Klingon Empire and its philosophy?",
+    "correct_answer": "Kahless the Unforgettable",
+    "incorrect_answers": [
+      "Lady Lukara of the Great Hall",
+      "Molor the Unforgiving",
+      "Dahar Master Kor"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "In what year did &quot;The Big Bang Theory&quot; debut on CBS?",
+    "correct_answer": "2007",
+    "incorrect_answers": ["2008", "2006", "2009"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Television",
+    "question": "Who was the winner of &quot;Big Brother&quot; Season 10?",
+    "correct_answer": "Dan Gheesling",
+    "incorrect_answers": ["Bryce Kranyik", "Ryan Sutfin", "Chris Mundorf"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "An episode of &quot;The Simpsons&quot; is dedicated to Moe Szyslak&#039;s bar rag.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "Grant Gustin plays which superhero on the CW show of the same name?",
+    "correct_answer": "The Flash",
+    "incorrect_answers": ["The Arrow", "Black Canary", "Daredevil"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "In the show &quot;The Office&quot; who does Michael Scott eventually end up with?",
+    "correct_answer": "Holly Flax",
+    "incorrect_answers": ["Angela Martin", "Jan Levinson", "Pam Beesly"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "Klingons express emotion in art through opera and poetry.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Television",
+    "question": "What was the UK &quot;Who Wants to be a Millionaire?&quot; cheating scandal known as?",
+    "correct_answer": "Major Fraud",
+    "incorrect_answers": [
+      "Ingram Cheater",
+      "Coughing Major",
+      "Millionaire Crime"
+    ]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "&quot;The Simpsons&quot; family is named after creator Matt Groening&#039;s real family.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "In the Doctor Who universe, how many times can a time lord normally regenerate?",
+    "correct_answer": "12",
+    "incorrect_answers": ["11", "13", "15"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "What is the name of the race horse that Tony Soprano becomes attached to?",
+    "correct_answer": "Pie-O-My",
+    "incorrect_answers": ["Man o&#039; war", "Bada Bing", "Honest Earnings"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Television",
+    "question": "In &quot;Star Trek&quot;, what is the Klingon delicacy of &quot;gagh&quot; made from?",
+    "correct_answer": "Serpent worms",
+    "incorrect_answers": ["Earthworms", "Spaghetti noodles", "Klingworms"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "In the show Stranger Things, what is Eleven&#039;s favorite breakfast food?",
+    "correct_answer": "Eggo Waffles",
+    "incorrect_answers": ["Toast", "Captain Crunch", "Bacon and Eggs"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "What was the name of the teenage witch played by Melisa Joan Hart who lives with her witch aunts Hilda and Zelda?",
+    "correct_answer": "Sabrina",
+    "incorrect_answers": ["Hermione", "Dorothy", "Dahlia"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "The 1985 Toyota Corolla &quot;AE86&quot; was the hero car for what anime? ",
+    "correct_answer": "Initial D",
+    "incorrect_answers": ["Wangan Midnight", "Ghost MF", "Ex Driver"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Television",
+    "question": "The &quot;Psycho&quot; series of videos on YouTube was created by which of the following?",
+    "correct_answer": "RiDGiD STUDiOS",
+    "incorrect_answers": ["Dan Bell", "Billy Familia", "VeganGainz"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "What year did the television company BBC officially launch the channel BBC One?",
+    "correct_answer": "1936",
+    "incorrect_answers": ["1948", "1932", "1955"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Television",
+    "question": "What episode of &quot;Mr. Bean&quot; saw him trying to prevent people from seeing him naked?",
+    "correct_answer": "Mr. Bean in Room 426",
+    "incorrect_answers": [
+      "Mr. Bean Goes to Town",
+      "The Trouble with Mr. Bean",
+      "Back to School Mr. Bean"
+    ]
+  }
+]

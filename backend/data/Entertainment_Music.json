@@ -1,0 +1,834 @@
+[
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Who is the lead singer of Pearl Jam?",
+    "correct_answer": "Eddie Vedder",
+    "incorrect_answers": ["Ozzy Osbourne", "Stone Gossard", "Kurt Cobain"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Johnny Cash did a cover of this song written by lead singer of Nine Inch Nails, Trent Reznor.",
+    "correct_answer": "Hurt",
+    "incorrect_answers": ["Closer", "A Warm Place", "Big Man with a Gun"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which band released songs such as &quot;Electric Feel&quot;, &quot;Kids&quot;, and &quot;Time to Pretend&quot;?",
+    "correct_answer": "MGMT",
+    "incorrect_answers": ["Passion Pit", "Phoenix", "Franz Ferdinand"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "Which year was the album &quot;Floral Shoppe&quot; by Macintosh Plus released?",
+    "correct_answer": "2011",
+    "incorrect_answers": ["2014", "2013", "2012"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which Beatle led the way across the zebra crossing on the Abbey Road album cover?",
+    "correct_answer": "John",
+    "incorrect_answers": ["Paul", "George", "Ringo"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "What year was Huun Huur Tu&#039;s album Altai Sayan Tandy-Uula released? ",
+    "correct_answer": "2004",
+    "incorrect_answers": ["1993", "2006", "2010"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "What French artist/band is known for playing on the midi instrument &quot;Launchpad&quot;?",
+    "correct_answer": "Madeon",
+    "incorrect_answers": ["Daft Punk ", "Disclosure", "David Guetta"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "Which of Michael Jackson&#039;s albums sold the most copies?",
+    "correct_answer": "Thriller",
+    "incorrect_answers": ["Dangerous", "Bad", "Off the Wall"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which band had hits in 1972 with the songs &quot;Baby I&#039;m A Want You&quot;, &quot;Everything I Own&quot; and &quot;The Guitar Man&quot;",
+    "correct_answer": "Bread",
+    "incorrect_answers": ["America", "Chicago", "Smokie"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Muse is a British (English) rock band",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Which Canadian reggae musician had a 1993 hit with the song &#039;Informer&#039;?",
+    "correct_answer": "Snow",
+    "incorrect_answers": ["Rain", "Hail", "Sleet"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which of these artists was NOT a member of the electronic music supergroup Swedish House Mafia, which split up in 2013?",
+    "correct_answer": "Alesso",
+    "incorrect_answers": ["Steve Angello", "Sebastian Ingrosso", "Axwell"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "Who recorded the 1975 album &#039;Captain Fantastic and the Brown Dirt Cowboy&#039;?",
+    "correct_answer": "Elton John",
+    "incorrect_answers": ["John Denver", "Billy Joel", "Joe Cocker"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "Artis Leon Ivey Jr. is better known as which rap artist?",
+    "correct_answer": "Coolio",
+    "incorrect_answers": ["Dr Dre", "Snoop Dogg", "Ice T"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "This album, now considered to be one of the greatest of all time, was a commercial failure when it was released.",
+    "correct_answer": "The Velvet Underground and Nico",
+    "incorrect_answers": ["Abbey Road", "Led Zeppelin IV", "Pet Sounds"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "What was the title of Sakamoto Kyu&#039;s song &quot;Ue o Muite Arukou&quot; (I Look Up As I Walk) changed to in the United States?",
+    "correct_answer": "Sukiyaki",
+    "incorrect_answers": ["Takoyaki", "Sushi", "Oden"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Which one of these songs did the group &quot;Men At Work&quot; NOT make?",
+    "correct_answer": "Safety Dance",
+    "incorrect_answers": [
+      "Down Under",
+      "Who Can It Be Now?",
+      "It&#039;s a Mistake"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "Who sings the rap song &quot;Secret Wars Part 1&quot;?",
+    "correct_answer": "The Last Emperor",
+    "incorrect_answers": ["MC Frontalot", "Busdriver", "Masta Killa"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "What was the name of Pink Floyd&#039;s first studio album?",
+    "correct_answer": "The Piper at the Gates of Dawn",
+    "incorrect_answers": ["Ummagumma", "More", "Atom Heart Mother"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "Where was Nicki Minaj born?",
+    "correct_answer": "Trinidad and Tobago",
+    "incorrect_answers": ["Haiti", "Saint Lucia", "Grenada"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Which band released songs suchs as &quot;Rio&quot;, &quot;Girls on Film&quot;, and &quot;The Reflex&quot;?",
+    "correct_answer": "Duran Duran",
+    "incorrect_answers": ["The Cure", "New Order", "Depeche Mode"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "The 2011 movie &quot;The Adventures of Tintin&quot; was directed by Steven Spielberg.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Green Day&#039;s album &#039;American Idiot&#039; is considered a &quot;punk rock opera.&quot;",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Whose albums included &quot;Back in Black&quot; and &quot;Ballbreaker&quot;?",
+    "correct_answer": "AC/DC",
+    "incorrect_answers": ["Iron Maiden", "Black Sabbath", "Metallica"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "In the song &ldquo;The Ultimate Showdown of Ultimate Destiny,&rdquo; who is the only one to survive the battle?",
+    "correct_answer": "Mr. Rogers",
+    "incorrect_answers": ["Batman", "Chuck Norris", "Godzilla"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Where does the Mac part of the name Fleetwood Mac come from?",
+    "correct_answer": "John McVie",
+    "incorrect_answers": ["Christine McVie", "Mac McAnally", "David Tennant"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which popular rock band has a one-armed drummer?",
+    "correct_answer": "Def Leppard",
+    "incorrect_answers": ["The Beatles", "Lynyrd Skynyrd", "Foreigner"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Who is the lead singer of Green Day?",
+    "correct_answer": "Billie Joe Armstrong",
+    "incorrect_answers": ["Mike Dirnt", "Sean Hughes", "Tr&eacute; Cool"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "&#039;74&ndash;&#039;75 is a 1993 single from the album Ring by what American band?",
+    "correct_answer": "The Connells",
+    "incorrect_answers": ["R.E.M.", "The Ocean Blue", "The Bangles"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "From which album is the Gorillaz song, &quot;On Melancholy Hill&quot; featured in?",
+    "correct_answer": "Plastic Beach",
+    "incorrect_answers": ["Demon Days", "Humanz", "The Fall"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "The song &quot;Feel Good Inc.&quot; by British band Gorillaz features which hip hop group?",
+    "correct_answer": "De La Soul",
+    "incorrect_answers": ["Public Enemy", "OutKast", "Cypress Hill"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which of these is the name of an American psychedelic rock band formed in 2002 by Benjamin Goldwasser and Andrew VanWyngarden?",
+    "correct_answer": "MGMT",
+    "incorrect_answers": ["MSTRKRFT", "STRFKR", "SBTRKT"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Who performed the guitar solo on Michael Jackson&#039;s hit &quot;Beat It&quot;?",
+    "correct_answer": "Eddie Van Halen",
+    "incorrect_answers": ["Steve Vai", "Kirk Hammett", "Zakk Wylde"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "What was Raekwon the Chefs debut solo album?",
+    "correct_answer": "Only Built 4 Cuban Linx",
+    "incorrect_answers": [
+      "Shaolin vs Wu-Tang",
+      "The Wild",
+      "The Lex Diamond Story"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Who is the frontman of the band 30 Seconds to Mars?",
+    "correct_answer": "Jared Leto",
+    "incorrect_answers": ["Gerard Way", "Matthew Bellamy", "Mike Shinoda"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "Who designed the album cover for True Romance, an album by Estelle?",
+    "correct_answer": "Rebecca Sugar",
+    "incorrect_answers": ["Matt Burnett", "Ian Jones Quartey", "Ben Leven"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which of these is NOT the name of an album released by Miami-based producer DJ Khaled?",
+    "correct_answer": "Don&#039;t Ever Play Yourself",
+    "incorrect_answers": [
+      "Major Key",
+      "Suffering From Success",
+      "I Changed A Lot"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which of these bands was a featuring artist in Compton rapper Kendrick Lamar&#039;s 2017 album, &quot;DAMN.&quot;?",
+    "correct_answer": "U2",
+    "incorrect_answers": ["Radiohead", "Coldplay", "Bon Jovi"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Sting, the lead vocalist of The Police, primarily plays what instrument?",
+    "correct_answer": "Bass Guitar",
+    "incorrect_answers": ["Drums", "Guitar", "Keyboards"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "The singer Billie Holiday was also known as &quot;Lady Day&quot;.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Who is the lead singer of Foo Fighters?",
+    "correct_answer": "Dave Grohl",
+    "incorrect_answers": [
+      "Dave Mustaine",
+      "James Hetfield",
+      "Little Red Riding Hood"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Which singer was featured in Jack &Uuml; (Skrillex &amp; Diplo)&#039;s 2015 song &#039;Where Are &Uuml; Now&#039;?",
+    "correct_answer": "Justin Bieber",
+    "incorrect_answers": ["Selena Gomez", "Ellie Goulding", "The Weeknd"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "On which Beatles album would you find the song &#039;Eleanor Rigby&#039;?",
+    "correct_answer": "Revolver",
+    "incorrect_answers": ["Help!", "Rubber Soul", "Abbey Road"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "&quot;Grande Valse&quot; is a phrase from the song &quot;Gran Vals&quot;. What is that song segment known as?",
+    "correct_answer": "Nokia Tune",
+    "incorrect_answers": [
+      "Hello Moto [Motorola Ringtone]",
+      "Droid Ringtone",
+      "Microsoft Ringtone"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "The &quot;British Invasion&quot; was a cultural phenomenon in music where British boy bands became popular in the USA in what decade?",
+    "correct_answer": "60&#039;s",
+    "incorrect_answers": ["50&#039;s", "40&#039;s", "30&#039;s"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which of these bands are NOT from Australia?",
+    "correct_answer": "The Naked and Famous",
+    "incorrect_answers": ["Cut Copy", "Empire of the Sun", "Tame Impala"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which of these is NOT a name of an album released by American rapper Pitbull?",
+    "correct_answer": "Welcome to Miami",
+    "incorrect_answers": ["Dale", "Global Warming", "Armando"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which song made by MAN WITH A MISSION was used as the opening for the anime &quot;Log Horizon&quot;?",
+    "correct_answer": "&quot;Database&quot;",
+    "incorrect_answers": [
+      "&quot;Dead End in Tokyo&quot;",
+      "&quot;Raise Your Flag&quot;",
+      "&quot;Out of Control&quot;"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which artist or group did John Lennon consider &quot;son(s) of the Beatles&quot;?",
+    "correct_answer": "Jeff Lynne&#039;s Electric Light Orchestra",
+    "incorrect_answers": ["The Rolling Stones", "Pink Floyd", "The Who"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "3 members of 2 Live Crew were arrested for playing songs from their album, As Nasty As They Wanna Be, live.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "The country song  &ldquo;A Boy Named Sue&rdquo; was written by Shel Silverstein.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "Which song in rapper Kanye West&#039;s album &quot;The Life of Pablo&quot; features Rihanna?",
+    "correct_answer": "Famous",
+    "incorrect_answers": ["Wolves", "Ultralight Beam", "Highlights"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "American rapper Dr. Dre actually has a Ph.D. doctorate.",
+    "correct_answer": "False",
+    "incorrect_answers": ["True"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Which of these are NOT a Men at Work song?",
+    "correct_answer": "Basket Case",
+    "incorrect_answers": [
+      "Dr. Heckyll and Mr. Jive",
+      "Who Can It Be Now?",
+      "Be Good Johnny"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "The Red Hot Chili Pepper song &quot;Give It Away&quot; is from what album?",
+    "correct_answer": "Blood Sugar Sex Magik",
+    "incorrect_answers": ["One Hot Minute", "By the Way", "Stadium Arcadium"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "What is not a wind instrument?",
+    "correct_answer": "Viola",
+    "incorrect_answers": ["Oboe", "Trombone", "Duduk"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which artist collaborated with American DJ Dillon Francis to release the song 2016 &quot;Need You&quot;?",
+    "correct_answer": "NGHTMRE",
+    "incorrect_answers": ["LOUDPVCK", "KRNE", "DVBBS"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "&quot;Make You Feel My Love&quot; was originally written and performed by which singer-songwriter?",
+    "correct_answer": "Bob Dylan",
+    "incorrect_answers": ["Elvis", "Adele", "Billy Joel"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which of these is NOT a song by Pegboard Nerds?",
+    "correct_answer": "WiFi Tears",
+    "incorrect_answers": ["Swamp Thing", "Emoji", "BAMF"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "The key of sharps does the key of G# minor contain?",
+    "correct_answer": "5",
+    "incorrect_answers": ["3", "7", "0"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "In an orchestra, what is the lowest member of the brass family?",
+    "correct_answer": "Tuba",
+    "incorrect_answers": ["Trombone", "Contrabass", "Bassoon"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which band had hits in 1975 with the songs, &#039;One Of These Nights&#039; &amp; &#039;Lyin Eyes&#039;?",
+    "correct_answer": "The Eagles",
+    "incorrect_answers": ["Fools Gold", "The Doobie Brothers", "Fleetwood Mac"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Scatman John&#039;s real name was John Paul Larkin.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "Which of these is NOT a song featured on the Lockjaw EP released in 2013 by Flume &amp; Chet Faker?",
+    "correct_answer": "Left Alone",
+    "incorrect_answers": [
+      "What About Us",
+      "This Song Is Not About A Girl",
+      "Drop The Game"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which band released the album &quot;Sonic Highways&quot; in 2014?",
+    "correct_answer": "Foo Fighters",
+    "incorrect_answers": ["Coldplay", "Nickelback", "The Flaming Lips"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "What was the name of the hip hop group Kanye West was a member of in the late 90s?",
+    "correct_answer": "The Go-Getters",
+    "incorrect_answers": ["The Jumpers", "The Kickstarters", "The Beat-Busters"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Irish musician Hozier released a music track in 2013 titled, &quot;Take Me to ______&quot;",
+    "correct_answer": "Church",
+    "incorrect_answers": ["Mosque", "Synagogue", "Temple"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which famous 90&#039;s rap album is commonly referred to as &quot;The Bible of Hip Hop&quot;?",
+    "correct_answer": "Illmatic",
+    "incorrect_answers": [
+      "The Low End Theory",
+      "The Chronic",
+      "Enter The Wu-Tang (36 Chambers)"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "&quot;Lift Your Spirit&quot; is an album by which artist?",
+    "correct_answer": "Aloe Blacc",
+    "incorrect_answers": ["Lena Meyer-Landrut", "Stevie Wonder", "Taylor Swift"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "From which country did the song &quot;Gangnam Style&quot; originate from?",
+    "correct_answer": "South Korea",
+    "incorrect_answers": ["Japan", "North Korea", "China"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Who had a 1983 hit with the song &#039;Africa&#039;?",
+    "correct_answer": "Toto",
+    "incorrect_answers": ["Foreigner", "Steely Dan", "Journey"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "Electronic artists Boys Noize and Skrillex have collaborated and released tracks under what name?",
+    "correct_answer": "Dog Blood",
+    "incorrect_answers": ["Jack &Uuml;", "What So Not", "Noisia"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Who was the lead singer and frontman of rock band R.E.M?",
+    "correct_answer": "Michael Stipe",
+    "incorrect_answers": ["Chris Martin", "Thom Yorke", "George Michael"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "What is the stage name of English female rapper Mathangi Arulpragasam, who is known for the song &quot;Paper Planes&quot;?",
+    "correct_answer": "M.I.A.",
+    "incorrect_answers": ["K.I.A.", "C.I.A.", "A.I.A."]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Who performed &quot;I Took A Pill In Ibiza&quot;?",
+    "correct_answer": "Mike Posner",
+    "incorrect_answers": ["Avicii", "Robbie Williams", "Harry Styles"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "What was the last Aphex Twin album released before his decade-long hiatus?",
+    "correct_answer": "Drukqs",
+    "incorrect_answers": [
+      "Windowlicker",
+      "Syro",
+      "Collected Ambient Works 85-92"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Who had a 1976 hit with the song &#039;You Make Me Feel Like Dancing&#039;?",
+    "correct_answer": "Leo Sayer",
+    "incorrect_answers": ["Elton John", "Billy Joel", "Andy Gibb"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Who is the lead singer of the British pop rock band Coldplay?",
+    "correct_answer": "Chris Martin",
+    "incorrect_answers": ["Jonny Buckland", "Guy Berryman", "Will Champion"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "Who had a 1981 hit with the song &quot;Japanese Boy&quot;?",
+    "correct_answer": "Aneka",
+    "incorrect_answers": ["Toyah", "Sandra", "Madonna"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Entertainment: Music",
+    "question": "Bj&ouml;rk&#039;s &quot;Unison&quot; contains a sample of which Oval song?",
+    "correct_answer": "Aero Deck",
+    "incorrect_answers": ["Textuell", "Panorama", "Do While"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "What album did The Lumineers release in 2016?",
+    "correct_answer": "Cleopatra",
+    "incorrect_answers": ["Winter", "The Lumineers", "Tracks From The Attic"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which genre of Hip Hop does MC Frontalot rap?",
+    "correct_answer": "Nerdcore",
+    "incorrect_answers": ["Horrorcore", "Christian", "Crunk"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "The alternative rock band, They Might Be Giants, released their album &#039;Flood&#039; in 1990. ",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which song is not by TheFatRat?",
+    "correct_answer": "Ascent",
+    "incorrect_answers": ["Monody", "Windfall", "Infinite Power!"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "Which song on Daft Punk&#039;s &quot;Random Access Memories&quot; features Pharrell Williams?",
+    "correct_answer": "Get Lucky",
+    "incorrect_answers": [
+      "Doin&#039; It Right",
+      "Instant Crush",
+      "The Game of Love"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "What&#039;s the most common time signature for rock songs?",
+    "correct_answer": "4/4",
+    "incorrect_answers": ["1/2", "8/12", "2/4"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "What Led Zeppelin album contains &quot;Stairway to Heaven&quot;?",
+    "correct_answer": "Led Zeppelin IV",
+    "incorrect_answers": [
+      "Houses of the Holy",
+      "Physical Graffiti",
+      "Led Zeppelin III"
+    ]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Nick Mason is the only member to appear on every Pink Floyd album.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "When did The Beatles release the LP &quot;Please Please Me&quot;?",
+    "correct_answer": "1963",
+    "incorrect_answers": ["1970", "1960", "1969"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "How many studio albums have the duo Daft Punk released?",
+    "correct_answer": "4",
+    "incorrect_answers": ["1", "5", "2"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which of these is NOT the name of an album released by American rapper Viper?",
+    "correct_answer": "The Life of Pablo",
+    "incorrect_answers": [
+      "Kill Urself My Man",
+      "You&#039;ll Cowards Don&#039;t Even Smoke Crack",
+      "Yo Wife Handcuffin&#039; Me"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "When was Gangnam Style uploaded to YouTube?",
+    "correct_answer": "2012",
+    "incorrect_answers": ["2013", "2014", "2011"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which novelty band was best known for their UK chart hits &quot;Combine Harvester&quot; and &quot;I Am a Cider Drinker&quot; in 1976?",
+    "correct_answer": "The Wurzels",
+    "incorrect_answers": [
+      "Goldie Lookin Chain",
+      "Bonzo Dog Doo-Dah Band",
+      "The Firm"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "African-American performer Sammy Davis Jr. was known for losing which part of his body in a car accident?",
+    "correct_answer": "Left Eye",
+    "incorrect_answers": ["Right Ear", "Right Middle Finger", "Nose"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Which Aerosmith album featured &quot;Walk This Way&quot;?",
+    "correct_answer": "Toys in the Attic",
+    "incorrect_answers": ["Rocks", "Get Your Wings", "Draw the Line"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "The 1952 musical composition 4&#039;33&quot;, composed by prolific American composer John Cage, is mainly comprised of what sound?",
+    "correct_answer": "Silence",
+    "incorrect_answers": ["Farts", "People talking", "Cricket chirps"]
+  },
+  {
+    "type": "boolean",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "Norwegian producer Kygo released a remix of the song &quot;Sexual Healing&quot; by Marvin Gaye.",
+    "correct_answer": "True",
+    "incorrect_answers": ["False"]
+  }
+]

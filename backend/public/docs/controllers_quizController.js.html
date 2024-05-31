@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My JavaScript Library: controllers/quizController.js</title>
+    
+      <link type="text/css" rel="stylesheet" href="styles/vendor/prism-custom.css">
+    
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+    
+</head>
+<body>
+
+<header class="layout-header">
+  
+  <h1>
+    <a href="./index.html">
+      My JavaScript Library
+    </a>
+  </h1>
+  <nav class="layout-nav">
+    <ul><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class" title="class">C</span><span class="nav-item-name is-class"><a href="ExamModal.html">ExamModal</a></span></li><li class="nav-heading"><span class="nav-item-type type-class" title="class">C</span><span class="nav-item-name is-class"><a href="QuestionModel.html">QuestionModel</a></span></li><li class="nav-heading"><span class="nav-item-type type-class" title="class">C</span><span class="nav-item-name is-class"><a href="ScoreModal.html">ScoreModal</a></span></li><li class="nav-item"><span class="nav-item-type type-member" title="member">M</span><span class="nav-item-name is-member"><a href="ScoreModal.html#.averageScore">averageScore</a></span></li><li class="nav-item"><span class="nav-item-type type-member" title="member">M</span><span class="nav-item-name is-member"><a href="ScoreModal.html#.totalAttemptedExams">totalAttemptedExams</a></span></li><li class="nav-item"><span class="nav-item-type type-member" title="member">M</span><span class="nav-item-name is-member"><a href="ScoreModal.html#.totalCorrectAnswers">totalCorrectAnswers</a></span></li><li class="nav-item"><span class="nav-item-type type-member" title="member">M</span><span class="nav-item-name is-member"><a href="ScoreModal.html#.totalScore">totalScore</a></span></li><li class="nav-item"><span class="nav-item-type type-member" title="member">M</span><span class="nav-item-name is-member"><a href="ScoreModal.html#.totalWrongAnswers">totalWrongAnswers</a></span></li><li class="nav-item"><span class="nav-item-type type-member" title="member">M</span><span class="nav-item-name is-member"><a href="ScoreModal.html#.user">user</a></span></li><li class="nav-heading"><span class="nav-item-type type-class" title="class">C</span><span class="nav-item-name is-class"><a href="SelectedTopicModal.html">SelectedTopicModal</a></span></li><li class="nav-heading"><span class="nav-item-type type-class" title="class">C</span><span class="nav-item-name is-class"><a href="TopicSchema.html">TopicSchema</a></span></li><li class="nav-heading"><span class="nav-item-type type-class" title="class">C</span><span class="nav-item-name is-class"><a href="UserSchema.html">UserSchema</a></span></li></ul><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-member" title="member">M</span><span class="nav-item-name is-member"><a href="global.html#Exam">Exam</a></span></li><li class="nav-item"><span class="nav-item-type type-member" title="member">M</span><span class="nav-item-name is-member"><a href="global.html#Prism">Prism</a></span></li><li class="nav-item"><span class="nav-item-type type-member" title="member">M</span><span class="nav-item-name is-member"><a href="global.html#Question">Question</a></span></li><li class="nav-item"><span class="nav-item-type type-member" title="member">M</span><span class="nav-item-name is-member"><a href="global.html#SelectedTopic">SelectedTopic</a></span></li><li class="nav-item"><span class="nav-item-type type-member" title="member">M</span><span class="nav-item-name is-member"><a href="global.html#Topic">Topic</a></span></li><li class="nav-item"><span class="nav-item-type type-member" title="member">M</span><span class="nav-item-name is-member"><a href="global.html#User">User</a></span></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#allExams">allExams</a></span></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#allTopics">allTopics</a></span></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#connect">connect</a></span></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#generateToken">generateToken</a></span></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#leaderboard">leaderboard</a></span></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#login">login</a></span></li><li class="nav-item"><span class="nav-item-type type-member" title="member">M</span><span class="nav-item-name is-member"><a href="global.html#port">port</a></span></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#questionsByTopic">questionsByTopic</a></span></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#quizExam">quizExam</a></span></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#quizSubmit">quizSubmit</a></span></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#register">register</a></span></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#selectTopics">selectTopics</a></span></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#usersTopics">usersTopics</a></span></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#validateToken">validateToken</a></span></li>
+  </nav>
+</header>
+
+
+<main class="layout-main  layout-content--source">
+  <div class="container">
+    <p class="page-kind">source</p>
+    <h1 class="page-title">controllers/quizController.js</h1>
+    
+
+
+
+    
+
+<section>
+    <article>
+        <pre id="source" class="source-page line-numbers"><code class="language-js">import Question from "../models/Question.js";
+import Topic from "../models/Topic.js";
+
+import { quizDifficulty } from "../utils/quiz-const/quiz-const.js";
+import Exam from "../models/Exam.js";
+import Score from "../models/Score.js";
+import mongoose from "mongoose";
+import SelectedTopic from "../models/SelectedTopic.js";
+
+/**
+ * The function `allTopics` retrieves all topics from a database and returns them as a JSON response,
+ * handling errors appropriately.
+ *@function
+ * @param {Object} request - The `request` parameter typically represents the incoming request to the server,
+ * containing information such as headers, parameters, and body data. It is commonly used to extract
+ * data sent by the client to the server.
+ * @param {Object} response - The `response` parameter in the `allTopics` function is used to send a response back
+ * to the client who made the request. It is an object that represents the HTTP response that will be
+ * sent back to the client. In this function, we are using the `response` object to send a
+ * @return {Object} - The function `allTopics` is returning a list of all topics fetched from the database in JSON
+ * format with a status code of 200 if successful. If an error occurs during the database query, it
+ * will return the error message in JSON format with a status code of 500.
+ */
+export const allTopics = async (request, response) => {
+  try {
+    const allTopics = await Topic.find();
+
+    return response.status(200).json(allTopics);
+  } catch (error) {
+    return response.status(500).json(error.message);
+  }
+};
+
+/**
+ * Fetches topics selected by the user.
+ *@function
+ * @param {object} request - The request object containing user information.
+ * @param {object} response - The response object to send back data or error messages.
+ * @returns {Promise&lt;void>} A Promise representing the asynchronous operation.
+ *
+ * @throws {Error} If there's an issue with retrieving user topics or processing the request.
+ */
+export const usersTopics = async (request, response) => {
+  if (!request.user) {
+    return response.status(401).json({ error: request.error });
+  }
+
+  // Extract user ID from the request object or use a default ID if not available
+  const userId = request.user["_id"].toString() ?? "6656f82b6e9326a3cd599c51";
+
+  try {
+    // Retrieve user-selected topics from the database based on user ID
+    const userTopics = await SelectedTopic.find({ user: userId });
+
+    // Return user-selected topics with a 200 (OK) status
+    return response.status(200).json(userTopics);
+  } catch (error) {
+    // Handle any errors that occur during the process and return a 500 (Internal Server Error) status
+    return response.status(500).json(error.message);
+  }
+};
+
+/**
+ * 
+ * Selects topics for the user.
+ * @function
+ * @param {object} request - The request object containing user information and selected topics.
+ * @param {object} response - The response object to send back data or error messages.
+ * @returns {Promise&lt;void>} A Promise representing the asynchronous operation.
+ *
+ * @throws {Error} If there's an issue with selecting topics, updating the database, or processing the request.
+ */
+export const selectTopics = async (request, response) => {
+  if (!request.user) {
+    return response.status(401).json({ error: request.error });
+  }
+
+  if (!request.body) {
+    return response
+      .status(404)
+      .json({ errorMessage: "Please provide selected topics." });
+  }
+
+  // Extract user ID from the request object or use a default ID if not available
+  const userId = request.user["_id"].toString() ?? "6656f82b6e9326a3cd599c51";
+
+  try {
+    // Extract selected topics from the request body
+    const topics = request.body;
+
+    // Map topics to required format
+    const mapTopics = topics.map((topic) => {
+      return { topicId: topic["_id"], name: topic.name };
+    });
+
+    // Create a new document with user ID and selected topics
+    const allTopics = await SelectedTopic({
+      user: userId,
+      topics: mapTopics,
+    });
+
+    // Find and update existing document with new topics if it exists
+    const updateTopics = await SelectedTopic.findOneAndUpdate(
+      {
+        user: userId,
+      },
+      {
+        topics: mapTopics,
+      }
+    );
+
+    // If no existing document found, save the newly created document
+    if (!updateTopics) {
+      await allTopics.save();
+    }
+
+    // Return the updated or newly created document with a 200 (OK) status
+    return response.status(200).json(allTopics);
+  } catch (error) {
+    // Handle any errors that occur during the process and return a 500 (Internal Server Error) status
+    return response.status(500).json(error.message);
+  }
+};
+
+/**
+ * Fetches questions based on the provided topic ID.
+ *@function
+ * @param {object} request - The request object containing the topic ID as a parameter.
+ * @param {object} response - The response object to send back data or error messages.
+ * @returns {Promise&lt;void>} A Promise representing the asynchronous operation.
+ *
+ * @throws {Error} If there's an issue with retrieving questions or processing the request.
+ */
+export const questionsByTopic = async (request, response) => {
+  if (!request.params.topicId) {
+    return response.status(400).json("Topic id is required");
+  }
+
+  try {
+    // Find the topic based on the provided topic ID
+    const topic = await Topic.find({
+      id: request.params.topicId,
+    });
+
+    // If the topic is found, retrieve questions related to that topic
+    if (topic[0]) {
+      const questions = await Question.find({ category: topic[0].name });
+      return response.status(200).json(questions);
+    }
+
+    // If the topic is not found, return a 404 (Not Found) status
+    return response.status(404).json("Topic not found");
+  } catch (error) {
+    // Handle any errors that occur during the process and return a 500 (Internal Server Error) status
+    return response.status(500).json(error.message);
+  }
+};
+
+/**
+ * Generates a quiz exam for the user based on selected topics or a specific topic ID.
+ *@function
+ * @param {object} request - The request object containing user information and optional topic ID query parameter.
+ * @param {object} response - The response object to send back data or error messages.
+ * @returns {Promise&lt;void>} A Promise representing the asynchronous operation.
+ *
+ * @throws {Error} If there's an issue with generating the quiz exam or processing the request.
+ */
+export const quizExam = async (request, response) => {
+  if (!request.user) {
+    return response.status(401).json({ error: request.error });
+  }
+
+  // Extract user ID from the request object or use a default ID if not available
+  const userId = request.user["_id"].toString() ?? "6656f82b6e9326a3cd599c51";
+
+  const topicId = request.query.topicId;
+
+  try {
+    let includedTopics = [];
+    // If no specific topic ID is provided, retrieve user-selected topics
+    if (!topicId) {
+      const userTopics = await SelectedTopic.find({ user: userId });
+      includedTopics = userTopics[0].topics.map((topic) => topic.name);
+    } else {
+      // If a specific topic ID is provided, retrieve the corresponding topic name
+      const topic = await Topic.findOne({ id: Number(topicId) });
+      includedTopics.push(topic.name);
+    }
+
+    // Aggregate questions based on included topics and select a random sample of 10 questions
+    const questions = await Question.aggregate([
+      { $match: { category: { $in: [...includedTopics] } } },
+      { $sample: { size: 10 } },
+    ]);
+
+    // Transform the questions to include correct and incorrect answers
+    const transformedQuestions = questions.map((question) => {
+      return {
+        ...question,
+        correct_answer: "",
+        incorrect_answers: [
+          ...question.incorrect_answers,
+          question.correct_answer,
+        ],
+      };
+    });
+
+    // Return the transformed questions along with the count of questions
+    return response
+      .status(200)
+      .json({ questions: transformedQuestions, count: questions.length });
+  } catch (error) {
+    // Handle any errors that occur during the process and return a 500 (Internal Server Error) status
+    return response.status(500).json(error.message);
+  }
+};
+
+/**
+ * Handles the submission of a quiz exam, calculates the score, and updates user statistics.
+ *@function
+ * @param {object} request - The request object containing user information and submitted quiz answers.
+ * @param {object} response - The response object to send back data or error messages.
+ * @returns {Promise&lt;void>} A Promise representing the asynchronous operation.
+ *
+ * @throws {Error} If there's an issue with processing the submitted quiz, updating user statistics, or processing the request.
+ */
+export const quizSubmit = async (request, response) => {
+  if (!request.user) {
+    return response.status(401).json({ error: request.error });
+  }
+
+  // Extract user ID from the request object or use a default ID if not available
+  const userId = request.user["_id"].toString() ?? "6656f82b6e9326a3cd599c51";
+
+  try {
+    // Get all submitted quiz answers from the request body
+    const quizAnswers = request.body;
+
+    let userScore = 0;
+    let totalScore = 0;
+    let totalQuestions = 0;
+    let totalCorrectAnswers = 0;
+
+    // Check each submitted answer against the correct answer and update scores accordingly
+    const correctAnswers = await Promise.all(
+      quizAnswers.map(async (question) => {
+        const fetchedQuestion = await Question.findById(question.id);
+
+        totalQuestions += 1;
+        totalScore += quizDifficulty[fetchedQuestion.difficulty];
+
+        // Check if the submitted answer is correct
+        if (fetchedQuestion.correct_answer === question.answer) {
+          // Update the user's score and count of correct answers
+          totalCorrectAnswers += 1;
+          userScore += quizDifficulty[fetchedQuestion.difficulty];
+        }
+
+        return {
+          correct: fetchedQuestion.correct_answer === question.answer,
+          question: question.id,
+          answer: question.answer,
+        };
+      })
+    );
+
+    // Create a new exam document with user statistics and submitted answers
+    const exam = await Exam({
+      userScore: userScore,
+      totalScore: totalScore,
+      totalQuestions: totalQuestions,
+      totalCorrectAnswers: totalCorrectAnswers,
+      user: userId,
+      questions: correctAnswers,
+    });
+
+    // Save the exam to the database
+    await exam.save();
+
+    // Update user statistics based on the submitted exam
+    const totalAttemptedExams = await Exam.countDocuments({ user: userId });
+
+    const allCounts = await Exam.aggregate([
+      { $match: { user: new mongoose.Types.ObjectId(userId) } },
+      {
+        $group: {
+          _id: null,
+          totalUserScore: { $sum: "$userScore" },
+          totalExamScore: { $sum: "$totalScore" },
+          allQuestion: { $sum: { $size: "$questions" } },
+        },
+      },
+    ]);
+
+    const { totalUserScore, allQuestion, totalExamScore } = allCounts[0];
+
+    const allCorrectAnswers = await Exam.aggregate([
+      { $match: { user: new mongoose.Types.ObjectId(userId) } },
+      {
+        $group: {
+          _id: null,
+          correct: {
+            $sum: {
+              $cond: {
+                if: "$questions.correct",
+                then: 1,
+                else: 0,
+              },
+            },
+          },
+        },
+      },
+    ]);
+
+    const totalWrongAnswers = allQuestion - allCorrectAnswers[0].correct;
+
+    const averageScore = (totalUserScore / totalExamScore) * 100;
+
+    const updateData = {
+      totalScore: totalUserScore,
+      totalQuestions: allQuestion,
+      totalCorrectAnswers: allCorrectAnswers[0].correct,
+      totalAttemptedExams: totalAttemptedExams,
+      totalWrongAnswers: totalWrongAnswers,
+      averageScore: averageScore,
+    };
+
+    // If user score is present then update data, otherwise create a new score document
+    const scoreResponse = await Score.findOneAndUpdate(
+      { user: userId },
+      { ...updateData }
+    );
+
+    if (!scoreResponse) {
+      const score = await Score({ ...updateData, user: userId });
+      await score.save();
+    }
+
+    // Return the user's score and exam statistics
+    return response.status(200).json({
+      userScore: userScore,
+      totalScore: totalScore,
+      totalQuestions: totalQuestions,
+      totalCorrectAnswers: totalCorrectAnswers,
+    });
+  } catch (error) {
+    // Handle any errors that occur during the process and return a 500 (Internal Server Error) status
+    return response.status(500).json(error.message);
+  }
+};
+
+/**
+ * Retrieves all exams taken by the user, including detailed information about each exam.
+ *@function
+ * @param {object} request - The request object containing user information.
+ * @param {object} response - The response object to send back data or error messages.
+ * @returns {Promise&lt;void>} A Promise representing the asynchronous operation.
+ *
+ * @throws {Error} If there's an issue with retrieving exams or processing the request.
+ */
+export const allExams = async (request, response) => {
+  if (!request.user) {
+    return response.status(401).json({ error: request.error });
+  }
+
+  // Extract user ID from the request object or use a default ID if not available
+  const userId = request.user["_id"].toString() ?? "6656f82b6e9326a3cd599c51";
+
+  try {
+    // Aggregate to retrieve detailed information about all exams taken by the user
+    const allExams = await Exam.aggregate([
+      {
+        $match: {
+          user: new mongoose.Types.ObjectId(userId),
+        },
+      },
+      {
+        $lookup: {
+          from: "users",
+          localField: "user",
+          foreignField: "_id",
+          as: "users",
+        },
+      },
+      {
+        $unwind: {
+          path: "$users",
+        },
+      },
+      {
+        $unwind: {
+          path: "$questions",
+        },
+      },
+      {
+        $lookup: {
+          from: "quiz_datas",
+          localField: "questions.question",
+          foreignField: "_id",
+          let: {
+            qId: "$questions.question",
+            qanswer: "$questions.answer",
+            qcorrect: "questions.correct",
+          },
+          pipeline: [
+            {
+              $project: {
+                _id: 0,
+                question: "$$ROOT",
+                answer: "$$qanswer",
+                correct: "$$qcorrect",
+              },
+            },
+          ],
+          as: "questions",
+        },
+      },
+      {
+        $unwind: {
+          path: "$questions",
+        },
+      },
+      {
+        $group: {
+          _id: "$_id",
+          user: { $first: "$users" },
+          userScore: { $first: "$userScore" },
+          totalScore: { $first: "$totalScore" },
+          totalQuestions: { $first: "$totalQuestions" },
+          totalCorrectAnswers: { $first: "$totalCorrectAnswers" },
+          createdAt: { $first: "$createdAt" },
+          questions: {
+            $push: "$questions",
+          },
+        },
+      },
+      {
+        $sort: {
+          createdAt: -1,
+        },
+      },
+    ]);
+
+    // Return the aggregated data about all exams taken by the user
+    return response.status(200).json(allExams);
+  } catch (error) {
+    // Handle any errors that occur during the process and return a 500 (Internal Server Error) status
+    return response.status(500).json(error.message);
+  }
+};
+
+/**
+ * Retrieves leaderboard data, ranking users based on their average scores.
+ *@function
+ * @param {object} request - The request object.
+ * @param {object} response - The response object to send back data or error messages.
+ * @returns {Promise&lt;void>} A Promise representing the asynchronous operation.
+ *
+ * @throws {Error} If there's an issue with retrieving leaderboard data or processing the request.
+ */
+export const leaderboard = async (request, response) => {
+  try {
+    // Aggregate to retrieve leaderboard data by sorting users based on average scores
+    const allExams = await Score.aggregate([
+      {
+        $lookup: {
+          from: "users",
+          localField: "user",
+          foreignField: "_id",
+          as: "users",
+        },
+      },
+      {
+        $unwind: {
+          path: "$users",
+        },
+      },
+      {
+        $sort: {
+          averageScore: -1,
+        },
+      },
+    ]);
+
+    // Return the sorted leaderboard data
+    return response.status(200).json(allExams);
+  } catch (error) {
+    // Handle any errors that occur during the process and return a 500 (Internal Server Error) status
+    return response.status(500).json(error.message);
+  }
+};
+</code></pre>
+    </article>
+</section>
+
+
+
+
+  </div>
+</main>
+
+<footer class="layout-footer">
+  <div class="container">
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Fri May 31 2024 17:30:54 GMT+0530 (India Standard Time)
+  </div>
+</footer>
+
+
+
+<script src="scripts/prism.dev.js"></script>
+</body>
+</html>
