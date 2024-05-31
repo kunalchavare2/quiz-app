@@ -30,7 +30,7 @@ export const handleSubmitExam = async (data) => {
 
     return Promise.resolve(response);
   } catch (error) {
-    Promise.reject(error);
+    return Promise.reject(error);
   }
 };
 
@@ -45,7 +45,7 @@ export const handleSubmitTopics = async (data) => {
 
     return Promise.resolve(response);
   } catch (error) {
-    Promise.reject(error);
+    return Promise.reject(error);
   }
 };
 
@@ -69,6 +69,6 @@ export const getLeaderBoard = async () => {
 
     return Promise.resolve(response);
   } catch (error) {
-    Promise.reject(error);
+    return Promise.reject(error);
   }
 };

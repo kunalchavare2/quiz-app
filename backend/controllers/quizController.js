@@ -61,7 +61,7 @@ export const usersTopics = async (request, response) => {
 };
 
 /**
- * 
+ *
  * Selects topics for the user.
  * @function
  * @param {object} request - The request object containing user information and selected topics.
@@ -88,15 +88,28 @@ export const selectTopics = async (request, response) => {
     // Extract selected topics from the request body
     const topics = request.body;
 
+    const prevTopics = await SelectedTopic.find({ user: userId });
+
     // Map topics to required format
     const mapTopics = topics.map((topic) => {
+      // if (prevTopics.length > 0) {
+      //   const prevTopic = prevTopics[0].topics.find(
+      //     (t) => t.topicId.toString() === topic["_id"].toString()
+      //   );
+      //   if (!prevTopic) return { topicId: topic["_id"], name: topic.name };
+      // } else {
+      //   return { topicId: topic["_id"], name: topic.name };
+      // }
       return { topicId: topic["_id"], name: topic.name };
     });
+
+    // Filter out undefined topics
+    const filteredTopics = mapTopics.filter((topic) => topic !== undefined);
 
     // Create a new document with user ID and selected topics
     const allTopics = await SelectedTopic({
       user: userId,
-      topics: mapTopics,
+      topics: filteredTopics,
     });
 
     // Find and update existing document with new topics if it exists
@@ -105,7 +118,7 @@ export const selectTopics = async (request, response) => {
         user: userId,
       },
       {
-        topics: mapTopics,
+        topics: filteredTopics,
       }
     );
 

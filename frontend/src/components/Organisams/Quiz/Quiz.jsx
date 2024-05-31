@@ -218,6 +218,7 @@ const Quiz = () => {
                   ? "Submit Exam"
                   : "Submit"
               }
+              disabled={quiz.isSubmitted}
               onClick={onSubmit}
             />
           </QuizForm>

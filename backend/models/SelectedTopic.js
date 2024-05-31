@@ -23,7 +23,6 @@ const SelectedTopicModal = new Schema({
       topicId: {
         type: mongoose.SchemaTypes.ObjectId,
         ref: Topic,
-        unique: true,
         required: true,
       },
       name: {
