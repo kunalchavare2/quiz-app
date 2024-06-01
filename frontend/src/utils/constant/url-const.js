@@ -1,3 +1,4 @@
+// export const SERVER_URL = "https://quiz-app-xux4.onrender.com/";
 export const SERVER_URL = "http://localhost:4001/";
 
 export const LOGIN_URL = SERVER_URL + "api/users/login";

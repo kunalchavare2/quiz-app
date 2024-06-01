@@ -33,8 +33,8 @@ export const TableRow = styled.tr`
   .data&:nth-child(2) {
     background-color: #c0c0c0;
   }
-  .data&:nth-child(2) {
-    background-color: #C9AE5D;
+  .data&:nth-child(3) {
+    background-color: #c9ae5d;
   }
 `;
 

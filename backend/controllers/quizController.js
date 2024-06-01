@@ -88,18 +88,8 @@ export const selectTopics = async (request, response) => {
     // Extract selected topics from the request body
     const topics = request.body;
 
-    const prevTopics = await SelectedTopic.find({ user: userId });
-
     // Map topics to required format
     const mapTopics = topics.map((topic) => {
-      // if (prevTopics.length > 0) {
-      //   const prevTopic = prevTopics[0].topics.find(
-      //     (t) => t.topicId.toString() === topic["_id"].toString()
-      //   );
-      //   if (!prevTopic) return { topicId: topic["_id"], name: topic.name };
-      // } else {
-      //   return { topicId: topic["_id"], name: topic.name };
-      // }
       return { topicId: topic["_id"], name: topic.name };
     });
 
@@ -115,7 +105,7 @@ export const selectTopics = async (request, response) => {
     // Find and update existing document with new topics if it exists
     const updateTopics = await SelectedTopic.findOneAndUpdate(
       {
-        user: userId,
+        user: new mongoose.Types.ObjectId(userId),
       },
       {
         topics: filteredTopics,

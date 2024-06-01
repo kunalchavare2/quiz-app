@@ -7,25 +7,33 @@ import HeaderStyle, {
   Wrapper,
 } from "./Header.styled.js";
 import Logo from "../../Atoms/Logo/Logo.jsx";
+import { IoIosClose, IoIosMenu } from "react-icons/io";
 
 import { useNavigate } from "react-router-dom";
-import IconButton from "../../Atoms/IconButton/IconButton.jsx";
 import { ReactComponent as Icon } from "../../../assets/images/image.svg";
-import Button from "../../Atoms/Button/Button.jsx";
 import Modal from "../Modal/Modal.jsx";
 import { useDispatch } from "react-redux";
 import { logout } from "../../../store/AuthSlice/AuthSlice.js";
 import NavIcon from "../../Atoms/NavIcon/NavIcon.jsx";
+import IconButton from "./../../Atoms/IconButton/IconButton";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+  const [menu, setMenuOpen] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  const handleNav = (e) => {
+    if (e.target.className === "icon-text") {
+      setMenuOpen(false);
+    }
+  };
+
   return (
     <HeaderStyle>
       <HeaderWrapper>
         <Logo showText={true} />
-        <HeaderNavStyle>
+        <HeaderNavStyle className={menu ? "open" : "close"} onClick={handleNav}>
           <NavIcon icon={""} text="Home" link="/home" hideIcon={true} />
           <NavIcon
             icon={""}
@@ -51,6 +59,14 @@ const Header = () => {
             link="/home/leaderboard"
             hideIcon={true}
           />
+          <IconButton
+            width="40px"
+            height="40px"
+            className="closeBtn"
+            onClick={() => setMenuOpen(false)}
+          >
+            <IoIosClose />
+          </IconButton>
         </HeaderNavStyle>
         <Wrapper>
           <Avatar>
@@ -70,23 +86,13 @@ const Header = () => {
               }}
             />
           </Avatar>
+          <IconButton className="hamMenu" onClick={() => setMenuOpen(!menu)}>
+            <IoIosMenu />
+          </IconButton>
         </Wrapper>
       </HeaderWrapper>
     </HeaderStyle>
   );
-};
-
-Header.propTypes = {
-  /**
-   * This will decide which type of header it is
-   */
-  // type: PropTypes.oneOf(["denger", "warning", "default"]),
-  // title: PropTypes.string,
-};
-
-Header.defaultProps = {
-  // type: "default",
-  // title: "Hello",
 };
 
 export default Header;

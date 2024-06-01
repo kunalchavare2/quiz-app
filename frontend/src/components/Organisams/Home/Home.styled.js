@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../../utils/constant/style-const";
 
 export const HomeStyle = styled.div`
   display: flex;
@@ -15,7 +16,7 @@ export const HomeContent = styled.div`
 
   h1 {
     font-family: inherit;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
     margin-bottom: 1rem;
     display: flex;
@@ -28,16 +29,25 @@ export const HomeContent = styled.div`
       font-weight: 700;
     }
   }
+
+  @media (${device.mobileL}) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
 `;
 
 export const HomeImage = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: center;
+  display: none;
+  @media (${device.tablet}) {
+    flex: 1;
+    display: flex;
+    align-items: center;
 
-  svg {
-    width: 100%;
-    height: 100%;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
   }
 `;
 

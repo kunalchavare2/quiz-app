@@ -1,9 +1,5 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
-import AddResource from "./pages/AddResource/AddResource";
-import Resources from "./components/Organisams/Resources/Resources";
-import Request from "./components/Organisams/Request/Request";
-import Users from "./components/Organisams/Users/Users";
 import HomeLayout from "./Layout/HomeLayout/HomeLayout";
 import Layout from "./Layout/RootLayout/Layout";
 import LoginPage from "./pages/LoginPage/LoginPage";
@@ -16,8 +12,6 @@ import Topics from "./components/Organisams/Topics/Topics";
 import SelectTopic from "./components/Organisams/SelectTopic/SelectTopic";
 import MyExams from "./components/Organisams/MyExams/MyExams";
 import LeaderBoard from "./components/Organisams/LeaderBoard/LeaderBoard";
-import { ErrorBoundary } from "react-error-boundary";
-import InfoTypes from "./components/Organisams/InfoTypes/InfoTypes";
 
 const routes = [
   {
@@ -62,11 +56,6 @@ const routes = [
             element: <LeaderBoard />,
           },
         ],
-      },
-
-      {
-        path: "/add-resource",
-        element: <AddResource />,
       },
     ],
   },

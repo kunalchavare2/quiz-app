@@ -1,77 +1,63 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { FormProvider, useForm } from "react-hook-form";
+import { useLocation } from "react-router-dom";
+import { getExamQues, handleSubmitExam } from "./../../../utils/quiz-functions/quiz-functions";
+import { toast } from "react-toastify";
 import {
   Instructions,
-  List,
-  QuizForm,
-  QuizResult,
   QuizWrapper,
   Title,
+  List,
+  QuizForm,
 } from "./Quiz.styled";
-import Axios from "axios";
-import { QUIZ_EXAM_URL } from "../../../utils/constant/url-const";
-import LoadingImg from "../../Atoms/Loading/LoadingImg";
-import Button from "./../../Atoms/Button/Button";
-import { useLocation, useNavigate } from "react-router-dom";
+import LoadingImg from "./../../Atoms/Loading/LoadingImg";
+import Button from "../../Atoms/Button/Button";
+import { quizInstructions } from "../../../utils/constant/quiz-const";
 import RadioButtonV2 from "./../../Atoms/RadioButtonV2/RadioButtonV2";
-import { FormProvider, useForm } from "react-hook-form";
-import {
-  getHeaders,
-  handleSubmitExam,
-} from "../../../utils/quiz-functions/quiz-functions";
-import { toast } from "react-toastify";
+import QuizResult from "./../../Molecules/QuizResult/QuizResult";
 
-import Trophy from "../../../assets/images/trophy.png";
-
+/**
+ * The main Quiz component.
+ *
+ * @returns {JSX.Element} - The JSX for the Quiz component.
+ */
 const Quiz = () => {
+  // State variables
   const [status, setStatus] = useState({
-    loading: true,
-    data: [],
-    error: null,
+    loading: true, // Indicates whether the data is loading
+    data: [], // The fetched data
+    error: null, // Any error encountered during data fetching
   });
 
-  const [results, setResults] = useState();
+  const [results, setResults] = useState(); // The results of the quiz
 
   const [quiz, setQuiz] = useState({
-    questions: [],
-    answers: [],
-    isSubmitted: false,
-    isStarted: false,
-    currQues: 0,
+    questions: [], // The fetched quiz questions
+    answers: [], // The user's answers
+    isSubmitted: false, // Indicates whether the quiz has been submitted
+    isStarted: false, // Indicates whether the quiz has been started
+    currQues: 0, // The index of the current question
   });
 
-  const navigate = useNavigate();
-  const methods = useForm();
-  const location = useLocation();
+  const methods = useForm(); // The form methods from react-hook-form
+  const location = useLocation(); // The current location object
 
+  // Fetch quiz questions when the component mounts or the search query changes
   useEffect(() => {
     if (status.data.length === 0) {
-      Axios.get(QUIZ_EXAM_URL + location.search, { ...getHeaders() })
-        .then((response) => {
-          console.log(response);
-          if (response.status === 200) {
-            const parsedData = JSON.parse(JSON.stringify(response.data));
+      getExamQues(location.search)
+        .then((results) => {
+          console.log(results);
+          setQuiz((prev) => ({
+            ...prev,
+            questions: results.questions,
+          }));
 
-            // To shuffle the answers
-            parsedData.questions.forEach((value, index) => {
-              let shuffled = [...value.incorrect_answers]
-                .map((value) => ({ value, sort: Math.random() }))
-                .sort((a, b) => a.sort - b.sort)
-                .map(({ value }) => value);
-
-              parsedData.questions[index].incorrect_answers = shuffled;
-            });
-
-            setQuiz((prev) => ({
-              ...prev,
-              questions: parsedData.questions,
-            }));
-
-            setStatus({
-              loading: false,
-              data: parsedData,
-              error: null,
-            });
-          }
+          setStatus({
+            loading: false,
+            data: results,
+            error: null,
+          });
         })
         .catch((err) => {
           setStatus({
@@ -81,8 +67,9 @@ const Quiz = () => {
           });
         });
     }
-  }, [status.data.length]);
+  }, [status.data.length, location.search]);
 
+  // Submit quiz answers when all answers are provided and the quiz is submitted
   useEffect(() => {
     if (quiz.answers.length === status.data.count && quiz.isSubmitted) {
       handleSubmitExam(quiz.answers)
@@ -100,22 +87,31 @@ const Quiz = () => {
           }));
         })
         .catch((err) => {
+          toast.error("Something went wrong! Please try again.");
           console.log(err);
         });
     }
   }, [quiz, status]);
 
+  /**
+   * Handles the submission of quiz answers.
+   *
+   * @param {Object} data - The form data containing the selected answers.
+   * @returns {void}
+   */
   const onSubmit = methods.handleSubmit(async (data) => {
+    // Create an answer object with the question id and selected answer
     const answer = {
       id: quiz.questions[quiz.currQues]["_id"],
       answer: data[quiz.currQues],
     };
-    console.log(quiz);
 
+    // Check if the answer for the current question is already present in the answers array
     const present = quiz.answers.find(
       (answer) => answer.id === quiz.questions[quiz.currQues]["_id"]
     );
 
+    // If the answer is not present, add it to the answers array
     if (!present) {
       setQuiz((prev) => ({
         ...prev,
@@ -123,14 +119,17 @@ const Quiz = () => {
       }));
     }
 
+    // If the current question is not the last question, move to the next question
     if (quiz.currQues < quiz.questions.length - 1) {
       setQuiz((prev) => ({
         ...prev,
         currQues: prev.currQues + 1,
       }));
 
+      // Reset the form
       methods.reset();
     } else {
+      // If the current question is the last question, set the isSubmitted flag to true
       setQuiz((prev) => ({
         ...prev,
         isSubmitted: true,
@@ -138,6 +137,7 @@ const Quiz = () => {
     }
   });
 
+  // Render loading state
   if (status.loading) {
     return (
       <QuizWrapper>
@@ -146,10 +146,11 @@ const Quiz = () => {
     );
   }
 
+  // Render error state
   if (status.error) {
-    console.log(status.error);
     return (
       <QuizWrapper>
+        <p>{status.error}</p>
         <Button
           title="Refresh"
           onClick={() => {
@@ -164,20 +165,16 @@ const Quiz = () => {
     );
   }
 
+  // Render instructions
   if (!quiz.isStarted && !quiz.isSubmitted) {
     return (
       <QuizWrapper>
         <Instructions>
           <Title>Instructions For Quiz!</Title>
           <List>
-            <li>The quiz consists of multiple-choice questions.</li>
-            <li>Use the "Submit" button to proceed to the next question.</li>
-            <li>Once selected, your answer will be highlighted.</li>
-            <li>
-              Once you have answered all the questions, click on the "Submit
-              Quiz" button to finalize your answers.
-            </li>
-            <li>Finally, relax and enjoy the quiz! Good luck!</li>
+            {quizInstructions.map((instruction) => (
+              <li key={instruction.slice(1, 5)}>{instruction}</li>
+            ))}
           </List>
           <Button
             title="Start Quiz"
@@ -188,12 +185,13 @@ const Quiz = () => {
     );
   }
 
+  // Render quiz questions
   if (quiz.isStarted) {
     return (
       <QuizWrapper>
         <FormProvider {...methods}>
           <QuizForm noValidate onSubmit={(e) => e.preventDefault()}>
-            <Title>Question {quiz.questions[quiz.currQues].question}</Title>
+            <Title>{quiz.questions[quiz.currQues].question}</Title>
 
             <div>
               {quiz.questions[quiz.currQues].incorrect_answers.map((ans) => (
@@ -227,41 +225,14 @@ const Quiz = () => {
     );
   }
 
-  if (quiz.isSubmitted || true) {
+  // Render quiz results
+  if (quiz.isSubmitted) {
     return (
       <QuizWrapper>
-        <QuizResult>
-          <div className="result-icon">
-            <img src={Trophy} alt="trophy" />
-          </div>
-          <Title>Congratulations</Title>
-          <span className="score-title">Your Score</span>
-          <span className="score">
-            <span className="score-actual">{results.totalCorrectAnswers}</span>/
-            {results.totalQuestions}
-          </span>
-          <span className="score-description">
-            You did a great job, Learn more by taking <span>quiz another</span>
-          </span>
-          <Button
-            title="Go Back"
-            onClick={() => {
-              setQuiz((prev) => ({
-                answers: [],
-                questions: [],
-                isSubmitted: false,
-                isStarted: false,
-                currQues: 0,
-              }));
-              navigate("/home");
-            }}
-          />
-        </QuizResult>
+        <QuizResult results={results} setQuiz={setQuiz} />
       </QuizWrapper>
     );
   }
-
-  return <QuizWrapper></QuizWrapper>;
 };
 
 export default Quiz;

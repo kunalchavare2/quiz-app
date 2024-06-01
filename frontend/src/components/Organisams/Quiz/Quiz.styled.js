@@ -8,6 +8,7 @@ export const QuizWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 1rem;
 `;
 
 export const Title = styled.h1`
@@ -41,45 +42,4 @@ export const QuizForm = styled.form`
   gap: 1rem;
   max-width: 500px;
   width: 100%;
-`;
-
-export const QuizResult = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  max-width: 500px;
-  width: 100%;
-
-  .result-icon {
-    width: 100px;
-
-    img {
-      max-width: 100%;
-    }
-  }
-
-  .score-title {
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: center;
-  }
-
-  .score {
-    font-size: 2rem;
-    .score-actual {
-      color: red;
-    }
-  }
-
-  .score-description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9rem;
-    font-weight: 400;
-    text-align: center;
-  }
 `;

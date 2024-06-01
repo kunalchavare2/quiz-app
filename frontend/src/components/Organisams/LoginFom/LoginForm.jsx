@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   LoginFormFooter,
   LoginFormHeader,
@@ -11,12 +11,10 @@ import Cookies from "universal-cookie";
 import {
   email_validation,
   password_validation,
-  phone_validation,
 } from "../../../utils/validations/inputValidations";
 import { FormProvider, useForm } from "react-hook-form";
 import Button from "../../Atoms/Button/Button";
 import { Link, useNavigate } from "react-router-dom";
-import { comparePassword, getFromLocalStorage } from "../../../utils/_helpers";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { login } from "../../../store/AuthSlice/AuthSlice";

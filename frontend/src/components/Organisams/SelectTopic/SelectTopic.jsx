@@ -22,6 +22,7 @@ import {
 
 const SelectTopic = () => {
   const methods = useForm();
+  const [submit, setSubmit] = useState();
 
   const [status, setStatus] = useState({
     loading: true,
@@ -67,6 +68,7 @@ const SelectTopic = () => {
 
   const onSubmit = methods.handleSubmit((data) => {
     console.log(data);
+    setSubmit(true);
     let selectedTopicsIds = [];
 
     for (const key in data) {
@@ -83,9 +85,11 @@ const SelectTopic = () => {
       .then((data) => {
         toast.success("Topics Saved Successfully");
         console.log(data);
+        setSubmit(false);
       })
       .catch((error) => {
         toast.error("Something went wrong");
+        setSubmit(false);
         console.log(error);
       });
   });
@@ -126,7 +130,7 @@ const SelectTopic = () => {
               );
             })}
           </FormItemsWrapper>
-          <Button title="Submit" onClick={onSubmit} />
+          <Button title="Submit" onClick={onSubmit} disabled={submit} />
         </SelectTopicForm>
       </FormProvider>
     </SelectTopicWrapper>
