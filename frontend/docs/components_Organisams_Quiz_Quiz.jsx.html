@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/Organisams/Quiz/Quiz.jsx</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/Organisams/Quiz/Quiz.jsx</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { useEffect, useState } from "react";
+import { FormProvider, useForm } from "react-hook-form";
+import { useLocation } from "react-router-dom";
+import {
+  getExamQues,
+  handleSubmitExam,
+} from "./../../../utils/quiz-functions/quiz-functions";
+import { toast } from "react-toastify";
+import {
+  Instructions,
+  QuizWrapper,
+  Title,
+  List,
+  QuizForm,
+} from "./Quiz.styled";
+import LoadingImg from "./../../Atoms/Loading/LoadingImg";
+import Button from "../../Atoms/Button/Button";
+import { quizInstructions } from "../../../utils/constant/quiz-const";
+import RadioButtonV2 from "./../../Atoms/RadioButtonV2/RadioButtonV2";
+import QuizResult from "./../../Molecules/QuizResult/QuizResult";
+
+/**
+ * The main Quiz component.
+ *
+ * @returns {JSX.Element} - The JSX for the Quiz component.
+ */
+const Quiz = () => {
+  // State variables
+  const [status, setStatus] = useState({
+    loading: true, // Indicates whether the data is loading
+    data: [], // The fetched data
+    error: null, // Any error encountered during data fetching
+  });
+
+  const [results, setResults] = useState(); // The results of the quiz
+
+  const [quiz, setQuiz] = useState({
+    questions: [], // The fetched quiz questions
+    answers: [], // The user's answers
+    isSubmitted: false, // Indicates whether the quiz has been submitted
+    isStarted: false, // Indicates whether the quiz has been started
+    currQues: 0, // The index of the current question
+  });
+
+  const methods = useForm(); // The form methods from react-hook-form
+  const location = useLocation(); // The current location object
+
+  // Fetch quiz questions when the component mounts or the search query changes
+  useEffect(() => {
+    if (status.data.length === 0) {
+      getExamQues(location.search)
+        .then((results) => {
+
+          setQuiz((prev) => ({
+            ...prev,
+            questions: results.questions,
+          }));
+
+          setStatus({
+            loading: false,
+            data: results,
+            error: null,
+          });
+        })
+        .catch((err) => {
+          setStatus({
+            loading: false,
+            data: [],
+            error: err.message,
+          });
+        });
+    }
+  }, [status.data.length, location.search]);
+
+  // Submit quiz answers when all answers are provided and the quiz is submitted
+  useEffect(() => {
+    if (quiz.answers.length === status.data.count &amp;&amp; quiz.isSubmitted) {
+      handleSubmitExam(quiz.answers)
+        .then((response) => {
+          toast.success("Successfully submitted");
+
+          setResults(response.data);
+
+          setQuiz((prev) => ({
+            answers: [],
+            questions: [],
+            isSubmitted: true,
+            isStarted: false,
+            currQues: 0,
+          }));
+        })
+        .catch((err) => {
+          toast.error("Something went wrong! Please try again.");
+  
+        });
+    }
+  }, [quiz, status]);
+
+  /**
+   * Handles the submission of quiz answers.
+   *
+   * @param {Object} data - The form data containing the selected answers.
+   * @returns {void}
+   */
+  const onSubmit = methods.handleSubmit(async (data) => {
+    // Create an answer object with the question id and selected answer
+    const answer = {
+      id: quiz.questions[quiz.currQues]["_id"],
+      answer: data[quiz.currQues],
+    };
+
+    // Check if the answer for the current question is already present in the answers array
+    const present = quiz.answers.find(
+      (answer) => answer.id === quiz.questions[quiz.currQues]["_id"]
+    );
+
+    // If the answer is not present, add it to the answers array
+    if (!present) {
+      setQuiz((prev) => ({
+        ...prev,
+        answers: [...prev.answers, answer],
+      }));
+    }
+
+    // If the current question is not the last question, move to the next question
+    if (quiz.currQues &lt; quiz.questions.length - 1) {
+      setQuiz((prev) => ({
+        ...prev,
+        currQues: prev.currQues + 1,
+      }));
+
+      // Reset the form
+      methods.reset();
+    } else {
+      // If the current question is the last question, set the isSubmitted flag to true
+      setQuiz((prev) => ({
+        ...prev,
+        isSubmitted: true,
+      }));
+    }
+  });
+
+  // Render loading state
+  if (status.loading) {
+    return (
+      &lt;QuizWrapper>
+        &lt;LoadingImg />
+      &lt;/QuizWrapper>
+    );
+  }
+
+  // Render error state
+  if (status.error) {
+    return (
+      &lt;QuizWrapper>
+        &lt;p>{status.error}&lt;/p>
+        &lt;Button
+          title="Refresh"
+          onClick={() => {
+            setStatus({
+              loading: true,
+              data: [],
+              error: null,
+            });
+          }}
+        />
+      &lt;/QuizWrapper>
+    );
+  }
+
+  // Render instructions
+  if (!quiz.isStarted &amp;&amp; !quiz.isSubmitted) {
+    return (
+      &lt;QuizWrapper>
+        &lt;Instructions>
+          &lt;Title>Instructions For Quiz!&lt;/Title>
+          &lt;List>
+            {quizInstructions.map((instruction, index) => (
+              &lt;li key={instruction.slice(1, 5) + index}>{instruction}&lt;/li>
+            ))}
+          &lt;/List>
+          &lt;Button
+            title="Start Quiz"
+            onClick={() => setQuiz((prev) => ({ ...prev, isStarted: true }))}
+          />
+        &lt;/Instructions>
+      &lt;/QuizWrapper>
+    );
+  }
+
+  // Render quiz questions
+  if (quiz.isStarted) {
+    return (
+      &lt;QuizWrapper>
+        &lt;FormProvider {...methods}>
+          &lt;QuizForm noValidate onSubmit={(e) => e.preventDefault()}>
+            &lt;Title>{quiz.questions[quiz.currQues].question}&lt;/Title>
+
+            &lt;div>
+              {quiz.questions[quiz.currQues].incorrect_answers.map((ans) => (
+                &lt;RadioButtonV2
+                  label={ans}
+                  group={quiz.currQues.toString()}
+                  name="quiz"
+                  validation={{
+                    required: {
+                      value: true,
+                      message: "required",
+                    },
+                  }}
+                  value={ans}
+                />
+              ))}
+            &lt;/div>
+
+            &lt;Button
+              title={
+                quiz.currQues === quiz.questions.length - 1
+                  ? "Submit Exam"
+                  : "Submit"
+              }
+              disabled={quiz.isSubmitted}
+              onClick={onSubmit}
+            />
+          &lt;/QuizForm>
+        &lt;/FormProvider>
+      &lt;/QuizWrapper>
+    );
+  }
+
+  // Render quiz results
+  if (quiz.isSubmitted) {
+    return (
+      &lt;QuizWrapper>
+        &lt;QuizResult results={results} setQuiz={setQuiz} />
+      &lt;/QuizWrapper>
+    );
+  }
+};
+
+export default Quiz;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Quiz">Quiz</a></li><li><a href="global.html#getAllExams">getAllExams</a></li><li><a href="global.html#getExamQues">getExamQues</a></li><li><a href="global.html#getHeaders">getHeaders</a></li><li><a href="global.html#getLeaderBoard">getLeaderBoard</a></li><li><a href="global.html#handleSubmitExam">handleSubmitExam</a></li><li><a href="global.html#handleSubmitTopics">handleSubmitTopics</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.3</a> on Sun Jun 02 2024 13:43:54 GMT+0530 (India Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
