@@ -23,7 +23,6 @@ const LeaderBoard = () => {
   useEffect(() => {
     getLeaderBoard()
       .then((response) => {
-        console.log(response.data);
         setStatus({
           loading: false,
           data: response.data,

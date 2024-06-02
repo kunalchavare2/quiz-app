@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useLocation } from "react-router-dom";
-import { getExamQues, handleSubmitExam } from "./../../../utils/quiz-functions/quiz-functions";
+import {
+  getExamQues,
+  handleSubmitExam,
+} from "./../../../utils/quiz-functions/quiz-functions";
 import { toast } from "react-toastify";
 import {
   Instructions,
@@ -47,7 +50,7 @@ const Quiz = () => {
     if (status.data.length === 0) {
       getExamQues(location.search)
         .then((results) => {
-          console.log(results);
+
           setQuiz((prev) => ({
             ...prev,
             questions: results.questions,
@@ -88,7 +91,7 @@ const Quiz = () => {
         })
         .catch((err) => {
           toast.error("Something went wrong! Please try again.");
-          console.log(err);
+  
         });
     }
   }, [quiz, status]);
@@ -172,8 +175,8 @@ const Quiz = () => {
         <Instructions>
           <Title>Instructions For Quiz!</Title>
           <List>
-            {quizInstructions.map((instruction) => (
-              <li key={instruction.slice(1, 5)}>{instruction}</li>
+            {quizInstructions.map((instruction, index) => (
+              <li key={instruction.slice(1, 5) + index}>{instruction}</li>
             ))}
           </List>
           <Button

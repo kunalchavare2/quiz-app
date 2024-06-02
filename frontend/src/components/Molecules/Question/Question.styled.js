@@ -25,7 +25,8 @@ export const AnsList = styled.ul`
   gap: 0.5rem;
 
   li {
-    padding: 0.5rem;
+    padding: 0.5rem 0;
+    padding-left: 0.5rem;
     border: 1px solid black;
   }
 

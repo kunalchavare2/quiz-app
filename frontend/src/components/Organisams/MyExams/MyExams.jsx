@@ -15,7 +15,6 @@ const MyExams = () => {
   useEffect(() => {
     getAllExams()
       .then((response) => {
-        console.log(response.data);
         setStatus({
           loading: false,
           data: response.data,

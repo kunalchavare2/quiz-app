@@ -103,7 +103,7 @@ export const getExamQues = async (search = "") => {
  *   });
  */
 export const handleSubmitExam = async (data) => {
-  console.log(data);
+
   try {
     const response = await Axios.post(
       QUIZ_EXAM_SUBMIT_URL,

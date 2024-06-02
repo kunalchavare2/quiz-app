@@ -7,9 +7,8 @@ import {
 } from "./Question.styled";
 
 const Question = (props) => {
-  const { answer, correct, question, index } = props;
+  const { answer, question, index } = props;
 
-  console.log(props);
 
   return (
     <QuestionWrapper>

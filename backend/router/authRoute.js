@@ -3,6 +3,7 @@ const router = Router();
 
 /** import controllers */
 import * as AuthController from "./../controllers/authController.js";
+import validateToken from "../middlewares/isAuthenticated.js";
 
 /** Auth Routes API */
 
@@ -195,5 +196,7 @@ router.post("/register", AuthController.register);
  *
  */
 router.post("/login", AuthController.login);
+
+router.get("/validate", validateToken, AuthController.validateUser);
 
 export default router;

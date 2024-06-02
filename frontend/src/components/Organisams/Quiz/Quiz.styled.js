@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { list } from "./Quiz.styled";
+
 
 export const QuizWrapper = styled.div`
   width: 100%;

@@ -21,7 +21,7 @@ app.use(express.static(path.join(dirname, "public")));
 app.use(morgan("tiny"));
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://master-quizz.netlify.app"],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     preflightContinue: false,
     optionsSuccessStatus: 204,

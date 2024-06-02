@@ -18,7 +18,7 @@ const Topics = () => {
     if (status.data.length === 0) {
       Axios.get(QUIZ_TOPICS_URL)
         .then((response) => {
-          console.log(response);
+   
           if (response.status === 200) {
             const parsedData = JSON.parse(JSON.stringify(response.data));
 

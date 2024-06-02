@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Navigate } from "react-router-dom";
-import { LOGIN_URL } from "../../utils/constant/url-const";
+import { VALIDATE_URL } from "../../utils/constant/url-const";
 import Cookies from "universal-cookie";
-import { login } from "../../store/AuthSlice/AuthSlice";
+import { login, logout } from "../../store/AuthSlice/AuthSlice";
 import { toast } from "react-toastify";
 
 const GuardedRoute = ({ children }) => {
@@ -15,11 +15,9 @@ const GuardedRoute = ({ children }) => {
   useEffect(() => {
     const cookies = new Cookies();
 
-    console.log(cookies);
+    Axios.get(
+      VALIDATE_URL,
 
-    Axios.post(
-      LOGIN_URL,
-      {},
       {
         withCredentials: true,
         headers: {
@@ -29,7 +27,6 @@ const GuardedRoute = ({ children }) => {
       }
     )
       .then((response) => {
-        console.log(response);
         if (response.data.isLoggedIn) {
           if ("accessToken" in response.data) {
             cookies.set("access_token", response.data.accessToken);
@@ -42,8 +39,9 @@ const GuardedRoute = ({ children }) => {
       })
       .catch((error) => {
         setLoading(false);
-        console.log(error);
-        // toast.error(error.message);
+
+        dispatch(logout());
+        toast.error(error.message);
       });
   }, []);
 

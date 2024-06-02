@@ -1,7 +1,17 @@
-// export const SERVER_URL = "https://quiz-app-xux4.onrender.com/";
-export const SERVER_URL = "http://localhost:4001/";
+const SERVER_deploy_URL = "https://quiz-app-xux4.onrender.com/";
+
+const SERVER_local_URL = "http://localhost:4001/";
+
+export const SERVER_URL =
+  process.env.REACT_APP_STAGE === "development"
+    ? SERVER_local_URL
+    : SERVER_deploy_URL;
+
+console.log(SERVER_URL);
 
 export const LOGIN_URL = SERVER_URL + "api/users/login";
+
+export const VALIDATE_URL = SERVER_URL + "api/users/validate";
 
 export const REGISTER_URL = SERVER_URL + "api/users/register";
 

@@ -7,17 +7,13 @@ export const ExamWrapper = styled.div`
   flex-direction: column;
   gap: 2rem;
   border: 1px solid black;
-  margin: 1rem;
+  /* margin: 1rem; */
 `;
 
 export const ExamHeader = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40%,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   gap: 1rem;
-
-  & > * {
-    flex-basis: 40%;
-  }
 
   @media (${device.tablet}) {
     display: flex;
@@ -27,6 +23,7 @@ export const ExamHeader = styled.div`
 `;
 
 export const ExamQuestions = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;

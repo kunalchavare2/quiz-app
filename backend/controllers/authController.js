@@ -146,3 +146,37 @@ export const login = async (request, response, next) => {
     return response.status(500).json({ error: error.message });
   }
 };
+
+/**
+ * Validates if a user is logged in.
+ *
+ * @function validateUser
+ * @param {Object} request - The request object containing the user's information.
+ * @param {Object} response - The response object to send back to the client.
+ * @param {Function} next - The next middleware function in the chain.
+ *
+ * @returns {Object} - A JSON response with a success message, a flag indicating if the user is logged in, and the user's details.
+ * If the user is logged in, the function returns the user's details.
+ * If the user is not logged in, the function throws an error indicating that the user is not logged in.
+ *
+ * @throws {Error} - If the user is not logged in.
+ */
+export const validateUser = async (request, response, next) => {
+  if (request.user) {
+    return response.status(200).json({
+      message: "User is logged in",
+      isLoggedIn: true,
+      user: {
+        email: request.user.email,
+        name: request.user.name,
+        id: request.user.id.toString(),
+      },
+    });
+  }
+
+  try {
+    throw new Error("User is not logged in");
+  } catch (error) {
+    return response.status(500).json({ error: error.message });
+  }
+};

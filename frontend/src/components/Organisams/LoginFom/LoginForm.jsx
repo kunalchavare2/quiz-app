@@ -30,7 +30,6 @@ const LoginForm = () => {
     try {
       const cookies = new Cookies();
 
-      console.log(cookies);
 
       const response = await Axios.post(
         LOGIN_URL,
@@ -54,7 +53,6 @@ const LoginForm = () => {
         toast.error(response.data.message);
       }
     } catch (error) {
-      console.log(error);
       toast.error(error.message);
     }
   };

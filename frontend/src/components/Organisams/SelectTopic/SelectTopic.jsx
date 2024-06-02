@@ -41,8 +41,7 @@ const SelectTopic = () => {
             ...getHeaders(),
           })
             .then((response) => {
-              console.log(allTopics);
-              console.log(response);
+     
               if (response.status === 200) {
                 setStatus({
                   loading: false,
@@ -67,7 +66,7 @@ const SelectTopic = () => {
   }, [status.data.length]);
 
   const onSubmit = methods.handleSubmit((data) => {
-    console.log(data);
+  
     setSubmit(true);
     let selectedTopicsIds = [];
 
@@ -84,13 +83,13 @@ const SelectTopic = () => {
     handleSubmitTopics(selectTopicsArr)
       .then((data) => {
         toast.success("Topics Saved Successfully");
-        console.log(data);
+      
         setSubmit(false);
       })
       .catch((error) => {
         toast.error("Something went wrong");
         setSubmit(false);
-        console.log(error);
+   
       });
   });
 
